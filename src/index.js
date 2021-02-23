@@ -29,11 +29,14 @@ const tail = new Tail(minecraftLog, encode)
 
 let channel
 
-const sendToDiscord = (...args) => channel.send(...args)
+const sendToDiscord = async (...args) => {
+  console.log(channel)
+  await channel.send(...args)
+}
 const sendToMinecraft = (...args) => rcon.send(...args)
 
-client.on('ready', () => {
-  channel = client.channels.get(discordChannel)
+client.on('ready', async () => {
+  channel = await client.channels.cache.get(discordChannel)
   console.log('Done!!')
 })
 

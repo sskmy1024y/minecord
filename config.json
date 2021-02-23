@@ -1,13 +1,16 @@
 {
   "pluginsDir": null,
   "enable": [
-    "chat"
+    "chat",
+    "login",
+    "whitelist",
+    "server"
   ],
   "disable": [],
-  "minecraftLog": "/var/minecraft/logs/latest.log",
+  "minecraftLog": "/Users/sho/sho/Develop/Github/temp/minecraft-server-in-docker/data/minecraft/logs/latest.log",
   "minecraftRconHost": "localhost",
-  "minecraftRconPort": 25575,
-  "minecraftRconPassword": "secret",
-  "discordBotToken": "",
-  "discordChannel": ""
+  "minecraftRconPort": 23857,
+  "minecraftRconPassword": "minecraft",
+  "discordBotToken": "ODEzMzA2OTM0NzM5NzMwNDg1.YDNZGw.UvcNPguW0zYOyxXkQ0GbnHJOzDc",
+  "discordChannel": "813310782569709628"
 }
